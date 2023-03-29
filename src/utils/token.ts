@@ -23,3 +23,6 @@ function RandomIndex(min, max, i){
     //返回最终索引值
     return index;
 }
+export const getToken = ()=>{
+    return localStorage.getItem("token")
+}

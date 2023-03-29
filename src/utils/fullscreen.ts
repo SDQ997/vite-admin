@@ -2,7 +2,7 @@
 /** 
  * @author nimo
  * @description 开启全屏
- * @param el
+ * @param 
 */
 export function fullScreen() {
     if (document.documentElement.RequestFullScreen) {
