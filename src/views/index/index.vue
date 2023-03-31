@@ -3,7 +3,7 @@
     <el-container class="elContainer">
       <el-aside
         class="elAside"
-        :width="slideIsRetract ? 50 + 'px' : 200 + 'px'"
+        :width="slideIsRetract ? 64 + 'px' : 200 + 'px'"
       >
       <slide></slide>
       </el-aside>
@@ -26,7 +26,9 @@
         <el-header style="padding: 0; height: 32px">
           <div class="indexHistory"></div>
         </el-header>
-        <el-main></el-main>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
       </el-container>
     </el-container>
   </div>

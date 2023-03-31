@@ -3,7 +3,8 @@ import { createStore } from "vuex"
 export default createStore({
     state:{
         lang:"",
-        slideIsRetract:false
+        slideIsRetract:false,
+        keepAlive:[],
     },
     getters:{
         lang:(state)=>{
@@ -18,7 +19,6 @@ export default createStore({
         }
     },
     actions:{
-
     },
     modules:{
 

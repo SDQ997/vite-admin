@@ -23,6 +23,7 @@
 </template>
 
 <script lang="ts" setup>
+import { menuList } from "@/api/menu/menu.ts"
 import { ref , getCurrentInstance } from "vue";
 import { createToken } from "@/utils/token"
 const { proxy }:any = getCurrentInstance()
@@ -39,9 +40,13 @@ const login = ()=>{
         proxy.$message.warning(proxy.$t('common.pleaseInput')+proxy.$t('login.password'))
         return
     }
-    let token = createToken()
-    localStorage.setItem("token",token)
-    proxy.$router.push("index")
+    menuList().then(res=>{
+      proxy.$router.addRoute(res[0])
+      let token = createToken()
+      localStorage.setItem("token",token)
+      localStorage.setItem("role","superadmin")
+      proxy.$router.push("index")
+    })
 }
 </script>
 

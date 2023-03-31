@@ -29,4 +29,10 @@ app.use(i18n)
 // vuex
 app.config.globalProperties.$store = store
 
+// 动态路由
+import { menuList } from "@/api/menu/menu.ts"
+menuList().then(res=>{
+  router.addRoute(res[0])
+})
+
 app.mount('#app')
