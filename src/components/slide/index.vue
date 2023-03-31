@@ -25,7 +25,7 @@
     };
 </script>
 <script lang="ts" setup>
-import { onMounted, ref, computed, getCurrentInstance } from "vue";
+import { onMounted, ref, computed, getCurrentInstance , watch} from "vue";
 const { proxy }: any = getCurrentInstance();
 const slideIsRetract = computed(() => {
     return proxy.$store.state.slideIsRetract;
@@ -68,6 +68,9 @@ const getMenuInfo = (array,id)=>{
     }
     return result;
 }
+watch(() => proxy.$route,newRoute=> {
+    defaultActive.value = newRoute.meta.id
+})
 onMounted(() => {
     getMenu()
 })

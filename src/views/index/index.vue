@@ -15,6 +15,7 @@
                 <el-icon v-show="!slideIsRetract" size="25"><Fold /></el-icon>
                 <el-icon v-show="slideIsRetract" size="25"><Expand /></el-icon>
               </div>
+              <breadcrumbs></breadcrumbs>
             </div>
             <div class="menu rightMenu">
               <fullScreen></fullScreen>
@@ -24,7 +25,9 @@
           </div>
         </el-header>
         <el-header style="padding: 0; height: 32px">
-          <div class="indexHistory"></div>
+          <div class="indexHistory">
+            <history></history>
+          </div>
         </el-header>
         <el-main>
           <router-view v-slot="{ Component }">
@@ -44,6 +47,8 @@ import user from "@/components/user/index.vue";
 import lang from "@/components/lang/index.vue";
 import fullScreen from "@/components/fullScreen/index.vue";
 import slide from "@/components/slide/index.vue"
+import breadcrumbs from "@/components/breadcrumbs/index.vue"
+import history from "@/components/history/index.vue"
 
 const { proxy }: any = getCurrentInstance();
 const slideIsRetract = computed(() => {
