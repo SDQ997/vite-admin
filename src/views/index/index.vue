@@ -29,7 +29,7 @@
             <history></history>
           </div>
         </el-header>
-        <el-main>
+        <el-main style="background-color: #ECEEF1;">
           <router-view v-slot="{ Component }">
               <keep-alive :include="keepAliveList">
                   <component :is="Component" />
@@ -92,6 +92,7 @@ const changeSlide = () => {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        gap:5px;
         .retractButton {
           width: 60px;
           height: 100%;

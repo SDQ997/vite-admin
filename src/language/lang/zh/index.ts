@@ -7,7 +7,9 @@ export default {
         logout:"退出登录",
         pleaseInput:"请输入",
         pleaseSelect:"请选择",
-        pleaseUpload:"请上传"
+        pleaseUpload:"请上传",
+        respect:"致敬vue-admin!",
+        gateway:"传送门"
     },
     menu:{
         "home":"首页",
@@ -18,5 +20,11 @@ export default {
         account:"账号名",
         password:"密码",
         loginButton:'登录'
+    },
+    home:{
+        "visitor":"今日访客",
+        "message":"消息",
+        "pay":"交易量",
+        "order":"工单"
     }
 }

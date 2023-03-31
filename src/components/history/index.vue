@@ -30,19 +30,8 @@ const initHistory = () => {
     if(!isExst){
         historyList.value.push({title:proxy.$route.meta.title,path:proxy.$route.name})
     }
-    // let route = proxy.$route
-    // if (route.name == "home") {
-    //     historyList.value = [{ title: "menu.home", path: "home"}]
-    // } else {
-    //     historyList.value = [{ title: "menu.home", path: "home"}]
-    //     historyList.value.push({
-    //         title:route.meta.title,
-    //         path:route.path
-    //     })
-    // }
 }
 onMounted(()=>{
-    console.log(routeName)
     initHistory()
 })
 watch(() => proxy.$route, newRoute => {
@@ -52,15 +41,15 @@ watch(() => proxy.$route, newRoute => {
 
 <style lang="scss" scoped>
 .history {
-    padding: 0 10px;
+    padding: 0 20px;
     height: 100%;
     color: #636466;
     display: flex;
     align-items: center;
     gap:10px;
     .historyItem{
-        padding: 0 10px;
-        height: calc(100% - 6px);
+        padding: 0 5px;
+        height: calc(100% - 8px);
         border: 1px solid #d6d7dc;
         display: flex;
         align-items: center;

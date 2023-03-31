@@ -7,7 +7,9 @@ export default {
         logout:"Log out",
         pleaseInput:"please input the ",
         pleaseSelect:"please select the ",
-        pleaseUpload:"please upload the "
+        pleaseUpload:"please upload the ",
+        respect:"respect to vue-admin!",
+        gateway:"Gateway"
     },
     menu:{
         "home":"Home",
@@ -18,5 +20,11 @@ export default {
         account:"account",
         password:"password",
         loginButton:'Login'
+    },
+    home:{
+        "visitor":"Today's visitor",
+        "message":"Message",
+        "pay":"Volume",
+        "order":"Order"
     }
 }
