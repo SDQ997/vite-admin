@@ -40,13 +40,17 @@ const login = ()=>{
         proxy.$message.warning(proxy.$t('common.pleaseInput')+proxy.$t('login.password'))
         return
     }
-    menuList().then(res=>{
-      proxy.$router.addRoute(res[0])
-      let token = createToken()
-      localStorage.setItem("token",token)
-      localStorage.setItem("role","superadmin")
-      proxy.$router.push("index")
-    })
+    let token = createToken()
+    localStorage.setItem("token",token)
+    localStorage.setItem("role","superadmin")
+    proxy.$router.push("/index")
+    // menuList().then(res=>{
+    //   proxy.$router.addRoute(“)
+    //   let token = createToken()
+    //   localStorage.setItem("token",token)
+    //   localStorage.setItem("role","superadmin")
+    //   proxy.$router.push("index")
+    // })
 }
 </script>
 
