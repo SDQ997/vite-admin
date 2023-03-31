@@ -27,7 +27,11 @@
           <div class="indexHistory"></div>
         </el-header>
         <el-main>
-          <router-view></router-view>
+          <router-view v-slot="{ Component }">
+              <keep-alive :include="keepAliveList">
+                  <component :is="Component" />
+              </keep-alive>
+          </router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -44,6 +48,12 @@ import slide from "@/components/slide/index.vue"
 const { proxy }: any = getCurrentInstance();
 const slideIsRetract = computed(() => {
   return proxy.$store.state.slideIsRetract;
+});
+const keepAliveList = computed(() => {
+  return proxy.$store.state.keepAlive;
+});
+const keepAliveKey = computed(() => {
+  return proxy.$route.path
 });
 const changeSlide = () => {
   proxy.$store.commit("changeState", {

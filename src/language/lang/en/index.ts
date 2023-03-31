@@ -9,6 +9,10 @@ export default {
         pleaseSelect:"please select the ",
         pleaseUpload:"please upload the "
     },
+    menu:{
+        "home":"Home",
+        "doc":"Document"
+    },
     login:{
         title:"Welcome",
         account:"account",

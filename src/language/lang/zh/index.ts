@@ -9,6 +9,10 @@ export default {
         pleaseSelect:"请选择",
         pleaseUpload:"请上传"
     },
+    menu:{
+        "home":"首页",
+        "doc":"文档"
+    },
     login: {
         title: "欢迎登录",
         account:"账号名",

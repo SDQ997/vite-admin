@@ -13,7 +13,9 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
-
+// 设置icon
+import installIcon from '@/utils/plusIcon.ts'
+app.use(installIcon)
 // 语言切换
 import lang from "@/components/lang/index.vue"
 app.component("lang",lang)
@@ -30,9 +32,5 @@ app.use(i18n)
 app.config.globalProperties.$store = store
 
 // 动态路由
-import { menuList } from "@/api/menu/menu.ts"
-menuList().then(res=>{
-  router.addRoute(res[0])
-})
 
 app.mount('#app')

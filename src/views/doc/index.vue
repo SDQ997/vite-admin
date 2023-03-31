@@ -1,13 +1,14 @@
 <template>
-    <div class="home">1312</div>
+    <div>我是文档</div>
 </template>
 
 <script lang="ts">
     export default {
-      name: 'home',
+      name: 'doc',
     }
 </script>
 <script lang="ts" setup>
+import { ref } from "vue"
 </script>
 
 <style>

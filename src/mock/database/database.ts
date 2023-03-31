@@ -2,23 +2,31 @@ export default () => {
     return {
         "menu/list": [
             {
-                name:"index",
-                path:"/index",
-                redirect:"/index/home",
-                component:()=>import("@/views/index/index.vue"),
-                children:[
-                    {
-                        title: "首页",
-                        name:"home",
-                        path: "home",
-                        component:()=>import("@/views/home/index.vue"),
-                        role: ["superadmin"],
-                        id:'1',
-                        parentId:null,
-                        child: []
-                    }
-                ]
-            }
+                title: "menu.home",
+                name: "home",
+                path: "home",
+                componentsPath:"home/index",
+                role: ["superadmin"],
+                id: '1',
+                icon:"House",
+                parentId: null,
+                keepAlive:true,
+                bread:true,
+                children:[]
+            },
+            {
+                title: "menu.doc",
+                name: "doc",
+                path: "doc",
+                componentsPath:"doc/index",
+                role: ["superadmin"],
+                id: '2',
+                icon:"Document",
+                parentId: null,
+                keepAlive:true,
+                bread:true,
+                children:[]
+            },
         ]
     }
 }
