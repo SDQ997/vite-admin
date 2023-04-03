@@ -182,6 +182,13 @@
   resolved "https://registry.npmmirror.com/@sxzz/popperjs-es/-/popperjs-es-2.11.7.tgz#a7f69e3665d3da9b115f9e71671dae1b97e13671"
   integrity sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==
 
+"@tinymce/tinymce-vue@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.npmmirror.com/@tinymce/tinymce-vue/-/tinymce-vue-5.0.1.tgz#7092fb7f5ce9b407796dde791857a69b1deac719"
+  integrity sha512-RzJflpf06VimGQNgCYMasS5+gEKTOs5ddOgrBuTGOMsHOeKBhMTim9ePjiwYpCpilyZgR5ZDyo5NfZgrKOHHEA==
+  dependencies:
+    tinymce "^6.0.0 || ^5.5.1"
+
 "@types/json-schema@^7.0.5":
   version "7.0.11"
   resolved "https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
@@ -431,6 +438,14 @@ delayed-stream@~1.0.0:
   resolved "https://registry.npmmirror.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
+echarts@^5.4.2:
+  version "5.4.2"
+  resolved "https://registry.npmmirror.com/echarts/-/echarts-5.4.2.tgz#9f38781c9c6ae323e896956178f6956952c77a48"
+  integrity sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==
+  dependencies:
+    tslib "2.3.0"
+    zrender "5.4.3"
+
 element-plus@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmmirror.com/element-plus/-/element-plus-2.3.1.tgz#e4e13c28702709583ab978041145bc1367844842"
@@ -554,6 +569,11 @@ immutable@^4.0.0:
   version "4.3.0"
   resolved "https://registry.npmmirror.com/immutable/-/immutable-4.3.0.tgz#eb1738f14ffb39fd068b1dbe1296117484dd34be"
   integrity sha512-0AOCmOip+xgJwEVTQj1EfiDDOkPmuyllDuTuEX+DDXUgapLAsBIfkg3sxCYyCEA8mQqZrrxPUGjcOQ2JS3WLkg==
+
+install@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.npmmirror.com/install/-/install-0.13.0.tgz#6af6e9da9dd0987de2ab420f78e60d9c17260776"
+  integrity sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==
 
 is-binary-path@~2.1.0:
   version "2.1.0"
@@ -806,12 +826,22 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmmirror.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+"tinymce@^6.0.0 || ^5.5.1", tinymce@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.npmmirror.com/tinymce/-/tinymce-6.4.1.tgz#9c28f798074668d53371805fb6f1c68e582a4549"
+  integrity sha512-+/cS2AM9l6p72IBs2uolHbGsBUztLs0WslqNgFaTXtmMksTNUOhh8p08xtA/fa03UGlWEC6/EJoeV95/QDXa2A==
+
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmmirror.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
+
+tslib@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
 uri-js@^4.2.2:
   version "4.4.1"
@@ -871,3 +901,10 @@ vuex@^4.1.0:
   integrity sha512-hmV6UerDrPcgbSy9ORAtNXDr9M4wlNP4pEFKye4ujJF8oqgFFuxDCdOLS3eNoRTtq5O3hoBDh9Doj1bQMYHRbQ==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.11"
+
+zrender@5.4.3:
+  version "5.4.3"
+  resolved "https://registry.npmmirror.com/zrender/-/zrender-5.4.3.tgz#41ffaf835f3a3210224abd9d6964b48ff01e79f5"
+  integrity sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==
+  dependencies:
+    tslib "2.3.0"

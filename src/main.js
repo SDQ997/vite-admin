@@ -31,6 +31,12 @@ app.use(i18n)
 // vuex
 app.config.globalProperties.$store = store
 
-// 动态路由
+// 可视化组件
+import datavBox from "@/components/datavBox/index.vue"
+app.component("datavBox",datavBox)
+
+// 富文本插件
+import Editor from "@/components/Editor/index.vue"
+app.component("Editor",Editor)
 
 app.mount('#app')

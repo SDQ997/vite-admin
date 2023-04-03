@@ -29,7 +29,7 @@
             <history></history>
           </div>
         </el-header>
-        <el-main style="background-color: #ECEEF1;">
+        <el-main style="background-color: #ECEEF1;overflow-y:auto;">
           <router-view v-slot="{ Component }">
               <keep-alive :include="keepAliveList">
                   <component :is="Component" />
@@ -118,6 +118,7 @@ const changeSlide = () => {
       width: 100%;
       height: 100%;
       box-shadow: 0 1px 4px rgba(0, 21, 41, 0.2);
+      position: relative;
     }
   }
 }

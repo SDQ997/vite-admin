@@ -1,5 +1,5 @@
 <template>
-    <div>我是文档</div>
+    <div>文档正在编写中...</div>
 </template>
 
 <script lang="ts">

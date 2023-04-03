@@ -13,7 +13,9 @@ export default {
     },
     menu:{
         "home":"首页",
-        "doc":"文档"
+        "doc":"文档",
+        "component":"组件",
+        "richText":"富文本"
     },
     login: {
         title: "欢迎登录",

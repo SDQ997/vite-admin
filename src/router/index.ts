@@ -38,22 +38,13 @@ const initMenu = async ()=>{
     let modules = import.meta.glob("../views/**")
     menuList().then(res=>{
         res.forEach((item)=>{
-            let obj = {
-                name:item.name,
-                path:item.path,
-                component: modules[`../views/${item.componentsPath}.vue`],
-                meta:{
-                    title:item.title,
-                    keepAlive:item.keepAlive,
-                    role:item.role,
-                    id:item.id,
-                    parentId:item.parentId,
-                    bread:item.bread,
-                    children:item.children,
-                    icon:item.icon
+            if(item.name && item.path && item.componentsPath){
+                let obj = {
+                    ...item,
+                    component: modules[`../views/${item.componentsPath}.vue`]
                 }
+                router.addRoute("index",obj)
             }
-            router.addRoute("index",obj)
         })
     })
 }

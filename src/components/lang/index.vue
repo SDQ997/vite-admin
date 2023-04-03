@@ -26,7 +26,6 @@ const lang = computed(()=>{
     return proxy.$store.state.lang
 })
 const handleCommand = (e)=>{
-    console.log(e)
     localStorage.setItem("lang",e)
     location.reload()
 }

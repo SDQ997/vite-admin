@@ -13,7 +13,9 @@ export default {
     },
     menu:{
         "home":"Home",
-        "doc":"Document"
+        "doc":"Document",
+        "component":"Component",
+        "richText":"Rich Text"
     },
     login:{
         title:"Welcome",
