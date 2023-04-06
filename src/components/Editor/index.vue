@@ -23,8 +23,6 @@ import "tinymce/plugins/wordcount"
 import "tinymce/plugins/media"
 
 import { onMounted } from 'vue';
-import { resolve } from "path";
-import { reject } from "lodash";
 const emits = defineEmits(["update:modelValue"])
 const props = defineProps({
     value: {
@@ -42,9 +40,9 @@ const lang = computed(()=>{
 })
 onMounted(() => {
     tinymce.init({
-        skin_url: "/public/tinymce/skins/ui/oxide",
-        content_css: "/public/tinymce/skins/content/default/content.css",
-        language_url: lang.value =='zh' ? "/public/tinymce/lang/zh-Hans.js" : "",
+        skin_url: "/src/static/tinymce/skins/ui/oxide",
+        content_css: "/src/static/tinymce/skins/content/default/content.css",
+        language_url: lang.value =='zh' ? "/src/static/tinymce/lang/zh-Hans.js" : "",
         language: lang.value =='zh' ? "zh-Hans" : '',
         height: 400,
         // branding: false,
