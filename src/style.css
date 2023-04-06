@@ -12,3 +12,11 @@ body,html{
   width: 100% !important;
   height: 100% !important;
 }
+.tipTitle{
+  padding: 10px 0;
+  font-size: 18px;
+  color: #6C6E72;
+}
+.propsTable{
+  width: 100%;
+}

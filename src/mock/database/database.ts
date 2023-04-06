@@ -53,6 +53,36 @@ export default () => {
                     id: '3-1',
                     icon:"",
                     parentId: "3",
+                    keepAlive:false,
+                    bread:true,
+                },
+                children:[]
+            },
+            {
+                name: "sticky",
+                path: "sticky",
+                componentsPath:"components/sticky/index",
+                meta:{
+                    title: "menu.sticky",
+                    role: ["superadmin"],
+                    id: '3-2',
+                    icon:"",
+                    parentId: "3",
+                    keepAlive:true,
+                    bread:true,
+                },
+                children:[]
+            },
+            {
+                name: "dropZone",
+                path: "dropZone",
+                componentsPath:"components/dropZone/index",
+                meta:{
+                    title: "menu.dropZone",
+                    role: ["superadmin"],
+                    id: '3-3',
+                    icon:"",
+                    parentId: "3",
                     keepAlive:true,
                     bread:true,
                 },

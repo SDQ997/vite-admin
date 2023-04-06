@@ -35,8 +35,12 @@ app.config.globalProperties.$store = store
 import datavBox from "@/components/datavBox/index.vue"
 app.component("datavBox",datavBox)
 
-// 富文本插件
+// 富文本组件
 import Editor from "@/components/Editor/index.vue"
 app.component("Editor",Editor)
+
+// 推拽区域组件
+import DropZone from "@/components/DropZone/index.vue"
+app.component("DropZone",DropZone)
 
 app.mount('#app')
